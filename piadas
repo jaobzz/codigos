@@ -1,0 +1,48 @@
+//Código por João Vitor Bione Ribeiro de Sousa
+//RA: 12524129408
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    // Vetor de piadas
+    String[] piadas = {
+        "Por que os químicos são ótimos em resolver problemas? Porque eles têm todas as soluções!",
+        "Por que o livro de matemática parece tão triste? Por causa de todos os seus problemas.",
+        "Por que os pássaros voam para climas mais quentes no inverno? É muito mais fácil do que caminhar!",
+        "Seja como um próton. Sempre seja positivo.",
+        "Por que o dinossauro atravessou a rua? Porque as galinhas ainda não existiam!",
+        "Eu tentei criar uma piada sobre o vácuo, mas era vazia demais.",
+        "O que o neurônio disse ao outro neurônio? “Você tá pensando o que eu tô pensando?”",
+        "Como que o mineiro usa a internet? Pelo UAI-fai.",
+        "Qual é o contrário de volátil? Essa é fácil: vem cá sobrinho.",
+        "Qual é o alimento mais sagrado que existe? O amém doím."
+    };
+    // Realiza o sorteio de uma das piadas
+    Random random = new Random();
+
+    // Scanner para entrada do usuário
+    Scanner sc = new Scanner(System.in);
+
+    System.out.println("Q Q VC QUER PORRA");
+    String resposta = sc.nextLine();
+
+    if (resposta.contains("piada") || resposta.contains("Piada") || resposta.contains("Piadas")
+        || resposta.contains("piadas")
+        || resposta.contains("PIADAS")
+        || resposta.contains("PIADA")) {
+
+      int indiceSorteado = random.nextInt(piadas.length);
+      String piadaSorteada = piadas[indiceSorteado];
+
+      // Exibe a piada sorteada
+      System.out.println("Lá vai: " + piadaSorteada);
+
+      // Fecha o scanner
+      sc.close();
+    } else {
+      System.out.println("SE TU NAO QUER OUVIR PIADA SAI DAQUI");
+    }
+  }
+}
