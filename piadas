@@ -25,7 +25,7 @@ public class Main {
     // Scanner para entrada do usuário
     Scanner sc = new Scanner(System.in);
 
-    System.out.println("Q Q VC QUER PORRA");
+    System.out.println("O que você quer?");
     String resposta = sc.nextLine();
 
     if (resposta.contains("piada") || resposta.contains("Piada") || resposta.contains("Piadas")
@@ -42,7 +42,7 @@ public class Main {
       // Fecha o scanner
       sc.close();
     } else {
-      System.out.println("SE TU NAO QUER OUVIR PIADA SAI DAQUI");
+      System.out.println("Só sei contar piadas");
     }
   }
 }
